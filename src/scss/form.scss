@@ -1,0 +1,202 @@
+.inputs__container {
+    margin-top: 60px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 134px;
+}
+
+select {
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    color: $textColor;
+}
+
+.form-submit {
+    flex-basis: 30%;
+}
+
+.form {
+    padding-top: 55px;
+
+    .option__container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block;
+        background: #C3002F;
+        border: none;
+        border-radius: 4px;
+        padding: 1.3% 20% 1.3% 10%;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 36px;
+        color: #fff;
+        position: relative;
+
+        &--submit {
+            width: 100%;
+
+            &::after {
+                content: '';
+                width: 12px;
+                height: 3px;
+                border-radius: 3px;
+                background-color: #fff;
+                position: absolute;
+                top: 39%;
+                right: 16%;
+                transform: rotate(45deg);
+            }
+
+            &::before {
+                content: '';
+                width: 12px;
+                height: 3px;
+                border-radius: 3px;
+                background-color: #fff;
+                position: absolute;
+                top: 57%;
+                right: 16%;
+                transform: rotate(135deg);
+            }
+        }
+    }
+
+    .select {
+        flex-basis: 29.8%;
+    }
+
+    .input {
+        width: 31%;
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        box-sizing: border-box;
+        padding: 10px;
+
+        &--name,
+        &--age,
+        &--price {
+            flex-basis: 31.9%;
+        }
+
+        &--description {
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+
+    &__change-color {
+        p {
+            color: $textColor;
+            margin-top: 0;
+        }
+
+        flex-basis: 29.8%;
+
+        .color-list {
+            display: flex;
+            
+            }
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+        font-weight: 700;
+        font-size: 42px;
+    }
+}
+
+.form__delet-item{
+    color: #8B8B8B;
+    text-align: center;
+    padding: 3px;
+    &:hover{
+        background-color: #282D30;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:500px){
+    .btn{
+        font-size: 12px !important;
+        padding: 0 !important;
+        padding-right: 32px !important;
+
+        &::after {
+            content: '';
+            width: 10px !important;
+            height: 2px !important;
+            border-radius: 3px;
+            background-color: #fff;
+            position: absolute;
+            top: 40% !important;
+            right: 19% !important;
+            transform: rotate(45deg);
+        }
+
+        &::before {
+            content: '';
+            width: 10px !important;
+            height: 2px !important;
+            border-radius: 3px;
+            background-color: #fff;
+            position: absolute;
+            top: 55% !important;
+            right: 19% !important;
+            transform: rotate(135deg);
+        }
+    }
+    form{
+        
+        margin-bottom: 50px;
+        .inputs__container{
+            .input--name{
+                flex-basis: 100%;
+                margin-bottom: 35px;
+            }
+            .input--price{
+                flex-basis: 45%;
+            }
+            .input--age{
+                flex-basis: 45%;
+            }
+        }
+        .option__container{
+            flex-wrap: wrap;
+            .form__change-color{
+                flex-basis: 60%;
+                margin-bottom: 35px;
+            }
+            .select{
+                flex-basis: 45%;
+            }
+            .form-submit{
+                flex-basis: 45%;
+            }
+        }
+        
+    }
+    
+
+}

@@ -1,0 +1,103 @@
+.table{
+    color: #fff;
+    .borderBottom{
+        border-bottom: 1px solid #DADADA;
+    }
+    td{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        color: #F5F6F6;
+    }
+    p{
+        color: #323232;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 2px;
+    }
+    span{
+        color: #8B8B8B;
+        text-align: left;
+        display: block;
+    }
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    &__head-name{
+        text-align: left;
+        width: 54%;
+        padding-left: 15px;
+    }
+    &__head-year{
+        width: 6%;
+    }
+    &__head-color{
+        width: 4%;
+    }
+    &__head-status{
+        width: 11%;
+    }
+    &__head-price{
+        width: 16%;
+    }
+    &__head-delet{
+        width: 9%;
+    }
+    th{
+        background-color: $bgDanger;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        margin: 0;
+    }
+    .form__p--text-center{
+        text-align: center;
+    }
+}
+
+@media(max-width:500px){
+    tbody{
+       tr:first-child{
+            display: none;
+        }
+        tr{
+            display: flex;
+            flex-wrap: wrap;
+            td:nth-child(1){
+                flex-basis: 55%;
+                order: 1;
+            }
+            td:nth-child(2){
+                order: 4;
+                flex-basis: 10%;
+            }
+            td:nth-child(3){
+                order: 2;
+                flex-basis: 10%;
+            }
+            td:nth-child(4){
+                order: 5;
+                flex-basis: 20%;
+            }
+            td:nth-child(5){
+                order: 3;
+                flex-basis: 25%;
+            }
+            td:nth-child(6){
+                order: 6;
+                flex-basis: 65%;
+                div{
+                    width: fit-content;
+                    background-color: #282D30;
+                    border-radius: 10px;
+                    padding: 4px;
+                    cursor: pointer;
+                    color: #fff;
+                    font-size: 12px;
+                    margin-left: 65%;
+                }
+            }
+        }
+    }
+}

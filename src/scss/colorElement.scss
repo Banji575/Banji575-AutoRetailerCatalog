@@ -1,0 +1,35 @@
+.color-item {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: cadetblue;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+
+        margin-right: 8.9%;
+
+        &--white {
+            background-color: #fff;
+            border: 1px solid #8B8B8B;
+        }
+
+        &--black {
+            background-color: #000;
+        }
+
+        &--grey {
+            background-color: #C4C4C4;
+        }
+
+        &--red {
+            background-color: #DD1C10;
+        }
+
+        &--green {
+            background-color: #77CF61;
+        }
+        &--active{
+            border: 2px solid #C3002F;
+        }
+    }

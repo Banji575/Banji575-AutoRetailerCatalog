@@ -1,0 +1,13 @@
+.header{
+    background-color:$mainBg;
+    svg{
+        display: flex;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:500px){
+    svg{
+        width: 60%;
+    }
+}
